@@ -11,6 +11,10 @@ It will close tabs when you reach the limit and restore them when there is a spa
 *   **Recover from crashes:** After a browser crash, queues are recovarable.
 *   **Dark Theme Support**
 
+## Screenshots
+
+![Screenshot of the extension popup](screenshots/Screenshot_2025-10-02_20-00-36.png)
+
 ## Installation
 
 ### From the Chrome Web Store (Coming Soon)
