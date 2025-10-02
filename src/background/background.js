@@ -1,3 +1,9 @@
+try {
+  importScripts('../utils/utils.js', 'storage.js', 'on-tab-activated.js', 'on-tab-event.js');
+} catch (e) {
+  console.error(e);
+}
+
 const activeTabHistory = {};
 const tabStack = {};
 const tabStackIds = {};
