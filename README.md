@@ -6,7 +6,7 @@ This extension enables you to limit the number of tabs opened in a browser windo
 
 It will close tabs when you reach the limit and restore them when there is a space.
 
-## Features v2
+## Features of v2
 
 *   **Recover from crashes:** After a browser crash, queues are recovarable.
 *   **Dark Theme Support**
