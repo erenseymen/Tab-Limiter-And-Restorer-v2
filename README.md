@@ -1,14 +1,10 @@
 # Tab Limiter and Restorer v2
 
-This is a modified version of the original ["Tab Limiter And Restorer"](https://chromewebstore.google.com/detail/Tab%20Limiter%20And%20Restorer/ifhilckbhneppbcbpkimbgeahhijhdpj) extension.
+This is a modified version of the original ["Tab Limiter And Restorer"](https://chromewebstore.google.com/detail/Tab%20Limiter%20And%20Restorer/ifhilckbhneppbcbpkimbgeahhijhdpj) chrome extension.
 
-A simple yet powerful browser extension designed to manage your tabs efficiently. It automatically queues new tabs when the maximum tab limit for a window is reached, helping to keep your browser tidy and responsive.
+This extension enables you to limit the number of tabs opened in a browser window.
 
-## Features
-
-*   **Tab Limiting:** Set a maximum number of tabs that can be open at the same time.
-*   **Tab Restoring:** When a tab is automatically closed, it's added to a "recently closed" list.
-*   **Easy Access:** View and restore your recently closed tabs from the extension popup.
+It will close tabs when you reach the limit and restore them when there is a space.
 
 ## Features v2
 
