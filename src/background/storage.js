@@ -2,6 +2,6 @@ const storage = {};
 
 const initialStorage = {
   active: true,
-  mode: 'stackOld', // [queueNew, stackOld]
+  mode: 'queueNew', // [queueNew, stackOld]
   tabsVisible: 12,
 };
