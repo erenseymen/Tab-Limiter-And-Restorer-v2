@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Limit</title>
+    <link href="popup-styles.css" rel="stylesheet" />
+    <link
+      href="../assets/vendors/bulma.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__icon" src="../assets/icons/icon-192.png" alt="Icon" />
+      <h1>Tab Limiter And Restorer</h1>
+      <div class="theme-switcher-container">
+        <label class="theme-switcher">
+          <input type="checkbox" id="theme-switcher-checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+
+    <main class="px-4 py-4">
+      <div class="is-flex is-align-items-center">
+        <div class="is-flex-grow-1">
+          <label class="checkbox">
+            <input
+              class="mr-2"
+              id="inputActive"
+              name="inputActive"
+              type="checkbox"
+            />
+            Active
+          </label>
+        </div>
+        <hr class="my-5" />
+        <div
+          class="
+            is-flex-grow-1
+            control
+            radio-control
+            is-flex is-flex-direction-column
+          "
+        >
+          <label class="radio">
+            <input
+              class="mr-2 mb-2"
+              id="inputModeStackOld"
+              name="inputMode"
+              type="radio"
+              value="stackOld"
+            />
+            Left side unload / restore
+          </label>
+          <label class="radio ml-0">
+            <input
+              class="mr-2"
+              id="inputModeQueueNew"
+              name="inputMode"
+              type="radio"
+              value="queueNew"
+            />
+            Right side unload / restore
+          </label>
+        </div>
+      </div>
+
+      <div class="my-5 is-flex is-align-items-center">
+        <div class="control">
+          <input
+            class="input"
+            id="inputTabsVisible"
+            min="1"
+            name="inputTabsVisible"
+            type="number"
+          />
+        </div>
+        <label class="ml-2" for="inputTabsVisible">Tab limit</label>
+      </div>
+
+      <hr class="my-5" />
+        <div class="field">
+          <button id="restoreQueuedTabsBtn" class="button is-warning is-fullwidth" style="margin-bottom: 1em; display: none;">Restore Queued Tabs</button>
+        </div>
+      <section>
+        <h1 class="title is-5 mb-4">Hidden Tabs</h1>
+        <p id="msgNoHiddenTabs">None.</p>
+        <div>
+          <ol id="listHiddenTabs" class="list-hidden-tabs"></ol>
+        </div>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

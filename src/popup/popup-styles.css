@@ -1,0 +1,97 @@
+:root {
+  --color-primary-main: #3f50b5;
+  --transition-shortest-sharp: 50ms cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+body[data-theme="light"] {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+  --header-background: var(--header-background-light);
+  --header-text: var(--header-text-light);
+  --hidden-tab-hover-bg: var(--hidden-tab-hover-bg-light);
+  --input-bg-color: var(--input-bg-color-light);
+  --input-border-color: var(--input-border-color-light);
+  --input-text-color: var(--input-text-color-light);
+  --button-warning-bg: var(--button-warning-bg-light);
+  --button-warning-text: var(--button-warning-text-light);
+  --hr-background: var(--hr-background-light);
+}
+
+body[data-theme="dark"] {
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
+  --header-background: var(--header-background-dark);
+  --header-text: var(--header-text-dark);
+  --hidden-tab-hover-bg: var(--hidden-tab-hover-bg-dark);
+  --input-bg-color: var(--input-bg-color-dark);
+  --input-border-color: var(--input-border-color-dark);
+  --input-text-color: var(--input-text-color-dark);
+  --button-warning-bg: var(--button-warning-bg-dark);
+  --button-warning-text: var(--button-warning-text-dark);
+  --hr-background: var(--hr-background-dark);
+}
+
+body::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+
+body::-webkit-scrollbar-thumb:window-inactive,
+body::-webkit-scrollbar-thumb {
+  background-clip: content-box;
+  background-color: #9e9e9e;
+  background-color: var(--color-primary-main);
+  border: 2px solid transparent;
+  border-radius: 4px;
+  height: 56px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary-main);
+}
+
+body {
+  width: 480px;
+  overflow: auto;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.header {
+  align-items: center;
+  background-color: var(--header-background);
+  color: var(--header-text);
+  display: flex;
+  padding: 0.75em;
+}
+.header h1 {
+  font-size: 1.25em;
+}
+.header__icon {
+  background: #fff;
+  margin-right: 1em;
+  width: 32px;
+}
+
+.list-hidden-tabs {
+  position: relative;
+}
+.list-hidden-tabs li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.75em;
+  transition: background-color var(--transition-shortest-sharp);
+}
+.list-hidden-tabs li:hover {
+  background-color: var(--hidden-tab-hover-bg);
+}
+.list-hidden-tabs li:hover div:last-child {
+  display: block;
+  position: absolute;
+  right: 0;
+  padding: 8px;
+}
+.list-hidden-tabs li div:last-child {
+  display: none;
+}

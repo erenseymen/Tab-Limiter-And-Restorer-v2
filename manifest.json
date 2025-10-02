@@ -1,0 +1,34 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "src/utils/utils.js", "src/background/storage.js", "src/background/on-tab-activated.js", "src/background/on-tab-event.js", "src/background/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "src/assets/icons/icon-16.png",
+         "19": "src/assets/icons/icon-19.png",
+         "24": "src/assets/icons/icon-24.png",
+         "32": "src/assets/icons/icon-32.png",
+         "38": "src/assets/icons/icon-38.png",
+         "48": "src/assets/icons/icon-48.png"
+      },
+      "default_popup": "src/popup/popup.html",
+      "default_title": "Tab Limiter And Restorer v2"
+   },
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "description": "Limit the number of tabs opened in a browser window. Close them when you reach the limit and restore them when there is a space.",
+   "homepage_url": "https://github.com/erenseymen/Tab-Limiter-And-Restorer-v2",
+   "icons": {
+      "128": "src/assets/icons/icon-128.png",
+      "16": "src/assets/icons/icon-16.png",
+      "19": "src/assets/icons/icon-19.png",
+      "24": "src/assets/icons/icon-24.png",
+      "32": "src/assets/icons/icon-32.png",
+      "38": "src/assets/icons/icon-38.png",
+      "48": "src/assets/icons/icon-48.png"
+   },
+   "manifest_version": 2,
+   "name": "Tab Limiter And Restorer v2",
+   "permissions": [ "storage", "tabs" ],
+   "version": "2.0.0"
+}

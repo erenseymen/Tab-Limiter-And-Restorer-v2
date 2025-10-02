@@ -1,0 +1,110 @@
+:root {
+  --background-color-light: #fff;
+  --text-color-light: #000;
+  --header-background-light: #3f50b5;
+  --header-text-light: #fff;
+  --hidden-tab-hover-bg-light: rgba(0, 0, 0, 0.08);
+  --input-bg-color-light: #fff;
+  --input-border-color-light: #dbdbdb;
+  --input-text-color-light: #363636;
+  --button-warning-bg-light: #ffdd57;
+  --button-warning-text-light: rgba(0, 0, 0, 0.7);
+  --hr-background-light: #dbdbdb;
+
+  --background-color-dark: #121212;
+  --text-color-dark: #fff;
+  --header-background-dark: #1f1f1f;
+  --header-text-dark: #fff;
+  --hidden-tab-hover-bg-dark: rgba(255, 255, 255, 0.08);
+  --input-bg-color-dark: #333;
+  --input-border-color-dark: #555;
+  --input-text-color-dark: #fff;
+  --button-warning-bg-dark: #b89b3e;
+  --button-warning-text-dark: #fff;
+  --hr-background-dark: #555;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.header {
+  background-color: var(--header-background);
+  color: var(--header-text);
+}
+
+.list-hidden-tabs li:hover {
+  background-color: var(--hidden-tab-hover-bg);
+}
+
+.input {
+  background-color: var(--input-bg-color);
+  border-color: var(--input-border-color);
+  color: var(--input-text-color);
+}
+
+.button.is-warning {
+  background-color: var(--button-warning-bg);
+  color: var(--button-warning-text);
+}
+
+hr {
+  background-color: var(--hr-background);
+}
+
+.theme-switcher-container {
+  margin-left: auto;
+  margin-right: 1em;
+}
+
+.theme-switcher {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.theme-switcher input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
