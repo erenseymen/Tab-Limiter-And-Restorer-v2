@@ -22,7 +22,7 @@ function onTabEvent() {
           if (chrome.runtime.lastError || !currentWindow) return;
           const windowTabs = tabStack[currentWindow.id];
           if (windowTabs && windowTabs.length) {
-            const tabToRestore = windowTabs.pop();
+            const tabToRestore = windowTabs.shift();
             tabStackIds[currentWindow.id].delete(tabToRestore.id);
             chrome.tabs.create(
               {
@@ -55,7 +55,7 @@ function onTabEvent() {
           if (chrome.runtime.lastError || !currentWindow) return;
           const windowTabs = tabStack[currentWindow.id];
           if (windowTabs && windowTabs.length) {
-            const tabToRestore = windowTabs.pop();
+            const tabToRestore = windowTabs.shift();
             tabStackIds[currentWindow.id].delete(tabToRestore.id);
             chrome.tabs.create(
               {
