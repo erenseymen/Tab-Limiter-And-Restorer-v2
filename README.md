@@ -13,7 +13,7 @@ It will close tabs when you reach the limit and restore them when there is a spa
 
 ## Screenshots
 
-![Screenshot of the extension popup](screenshots/Screenshot_2025-10-02_20-00-36.png)
+![Screenshot of the extension popup](screenshots/screenshot-dark.png)
 
 ## Installation
 
