@@ -3,8 +3,8 @@ function setBadge(windowId) {
     ? (tabStack[windowId] && tabStack[windowId].length) || ''
     : '';
 
-  chrome.browserAction.setBadgeText({ text: String(text) });
-  chrome.browserAction.setBadgeBackgroundColor({
+  chrome.action.setBadgeText({ text: String(text) });
+  chrome.action.setBadgeBackgroundColor({
     color: '#3f50b5',
   });
 }
